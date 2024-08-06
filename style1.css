@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    
+    box-sizing: border-box;
+}*
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 33, 33);
+}
+.navigation{
+    background: orangered;
+    width: 100%;
+    height: 50%;
+}
+.navigation ul{
+    background: orangered;
+    width: 100%;
+    
+}
+.navigation ul{
+  
+  float: left;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px ;
+    padding:  15px;
+    display: block;
+}
+.navigation ul li{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 32px ;
+    background-color: orangered;
+}
+.navigation ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: orangered;
+}
+.navigation ul ul li{
+    float: left;
+    width: 200px;
+}
+.navigation ul ul ul{
+    top: 0px;
+    left: 100%;
+
+}
+.navigation ul li:hover{
+    background-color:black ;
+
+}
+.navigation ul li:hover> ul{
+    display: block;
+  
+
+}
+.text{
+    text-align: center;
+    justify-content: center;
+}
+.text h1{
+    padding-top: 165px;
+    color: white;
+    font-size: 67px;
+    font-weight: bolder;
+}
+.text p{
+    color: white;
+    font-size: 25px;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+   
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 999px){
+
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+}
